@@ -55,3 +55,18 @@ resource "aws_route_table_association" "dev-public-1-a" {
   route_table_id = aws_route_table.dev-public.id
 }
 
+
+
+
+# Creating EC2 instances in public subnets
+# resource "aws_instance" "public_inst_1" {
+#   ami           = "ami-0c1a7f89451184c8b"
+#   instance_type = "t2.micro"
+#   subnet_id = "${aws_subnet.dev-public-1.id}"
+#   key_name = "raemond"
+#   tags = {
+#     Name = "my_instance_1"
+#   }
+# }
+
+# https://www.youtube.com/watch?v=LSz9VbdCPR0&list=PLdsu0umqbb8NxoJUNup3PCb38RQpQtm9p&index=3
