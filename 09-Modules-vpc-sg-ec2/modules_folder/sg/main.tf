@@ -1,7 +1,7 @@
 resource "aws_security_group" "instance_sg" {
-  name        = "instance_sg"
+  name        = "instance_sg"       # Name of your sg
   description = "Allow SSH"
-  vpc_id      = var.vpc_id
+  vpc_id      = var.vpc_id          # Connection to vpc created
 
   ingress {
     from_port   = 22
