@@ -11,7 +11,7 @@ module "vpc" {
 
 module "security_group" {
   source  = "./modules_folder/sg"
-  vpc_id  = module.vpc.vpc_id
+  vpc_id_value  = module.vpc.vpc_id       #  connection resource "aws_security_group" "instance_sg"
 }
 
 module "ec2_instance" {
