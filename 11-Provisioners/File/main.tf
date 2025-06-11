@@ -18,7 +18,7 @@ provider "aws" {
       type        = "ssh"
       host        = self.public_ip
       user        = "ubuntu"
-      private_key = file("C:/Raemond-Software/raemond-ec2-pem.pem")
+      private_key = file("C:/Directory/my_private_key")            # location of private key
       timeout     = "4m"
    }
 
